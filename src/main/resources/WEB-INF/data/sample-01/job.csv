@@ -1,0 +1,81 @@
+﻿key,ticker,title,deadline,salary,score,description,more-info,draft-mode,key:employer,key:contractor
+# base entity
+job-00,TICKER-00,"Lorem ipsum dolor sit amet, consectetur adipiscing",2025/09/01 10:00,EUR 500000.00,50,"Lorem ipsum dolor sit amet, consectetur adipiscing",http://lorem.com/ipsum,TRUE,employer-01,company-01
+# ticker - standard variations
+job-01,TICKE,"Lorem ipsum dolor sit amet, consectetur adipiscing",2025/09/01 10:00,EUR 500000.00,50,"Lorem ipsum dolor sit amet, consectetur adipiscing",http://lorem.com/ipsum,TRUE,employer-01,company-01
+job-02,TICKER,"Lorem ipsum dolor sit amet, consectetur adipiscing",2025/09/01 10:00,EUR 500000.00,50,"Lorem ipsum dolor sit amet, consectetur adipiscing",http://lorem.com/ipsum,TRUE,employer-01,company-01
+job-03,TICKER-1234567,"Lorem ipsum dolor sit amet, consectetur adipiscing",2025/09/01 10:00,EUR 500000.00,50,"Lorem ipsum dolor sit amet, consectetur adipiscing",http://lorem.com/ipsum,TRUE,employer-01,company-01
+job-04,TICKER-12345678,"Lorem ipsum dolor sit amet, consectetur adipiscing",2025/09/01 10:00,EUR 500000.00,50,"Lorem ipsum dolor sit amet, consectetur adipiscing",http://lorem.com/ipsum,TRUE,employer-01,company-01
+# ticker - no singular values
+# title - standard variations
+job-05,TICKER-05,L,2025/09/01 10:00,EUR 500000.00,50,"Lorem ipsum dolor sit amet, consectetur adipiscing",http://lorem.com/ipsum,TRUE,employer-01,company-01
+job-06,TICKER-06,Lo,2025/09/01 10:00,EUR 500000.00,50,"Lorem ipsum dolor sit amet, consectetur adipiscing",http://lorem.com/ipsum,TRUE,employer-01,company-01
+job-07,TICKER-07,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod te",2025/09/01 10:00,EUR 500000.00,50,"Lorem ipsum dolor sit amet, consectetur adipiscing",http://lorem.com/ipsum,TRUE,employer-01,company-01
+job-08,TICKER-08,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tem",2025/09/01 10:00,EUR 500000.00,50,"Lorem ipsum dolor sit amet, consectetur adipiscing",http://lorem.com/ipsum,TRUE,employer-01,company-01
+job-09,TICKER-09,โลเร็ม อิปซัม,2025/09/01 10:00,EUR 500000.00,50,"Lorem ipsum dolor sit amet, consectetur adipiscing",http://lorem.com/ipsum,TRUE,employer-01,company-01
+job-10,TICKER-10,لوريم إيبسوم,2025/09/01 10:00,EUR 500000.00,50,"Lorem ipsum dolor sit amet, consectetur adipiscing",http://lorem.com/ipsum,TRUE,employer-01,company-01
+job-11,TICKER-11,洛伦·伊普森,2025/09/01 10:00,EUR 500000.00,50,"Lorem ipsum dolor sit amet, consectetur adipiscing",http://lorem.com/ipsum,TRUE,employer-01,company-01
+job-12,TICKER-12,<marquee>Hacked</marquee>,2025/09/01 10:00,EUR 500000.00,50,"Lorem ipsum dolor sit amet, consectetur adipiscing",http://lorem.com/ipsum,TRUE,employer-01,company-01
+job-13,TICKER-13,<script>alert(‘Hacked!’);</script>,2025/09/01 10:00,EUR 500000.00,50,"Lorem ipsum dolor sit amet, consectetur adipiscing",http://lorem.com/ipsum,TRUE,employer-01,company-01
+job-14,TICKER-14,' or 'A' = 'A,2025/09/01 10:00,EUR 500000.00,50,"Lorem ipsum dolor sit amet, consectetur adipiscing",http://lorem.com/ipsum,TRUE,employer-01,company-01
+# title - no singular values
+# deadline - standard variations
+job-15,TICKER-15,"Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/08 00:00,EUR 500000.00,50,"Lorem ipsum dolor sit amet, consectetur adipiscing",http://lorem.com/ipsum,TRUE,employer-01,company-01
+job-16,TICKER-16,"Lorem ipsum dolor sit amet, consectetur adipiscing",2025/01/08 00:01,EUR 500000.00,50,"Lorem ipsum dolor sit amet, consectetur adipiscing",http://lorem.com/ipsum,TRUE,employer-01,company-01
+job-17,TICKER-17,"Lorem ipsum dolor sit amet, consectetur adipiscing",2200/12/31 23:59,EUR 500000.00,50,"Lorem ipsum dolor sit amet, consectetur adipiscing",http://lorem.com/ipsum,TRUE,employer-01,company-01
+job-18,TICKER-18,"Lorem ipsum dolor sit amet, consectetur adipiscing",2201/01/01 00:00,EUR 500000.00,50,"Lorem ipsum dolor sit amet, consectetur adipiscing",http://lorem.com/ipsum,TRUE,employer-01,company-01
+# deadline - no singular values
+# salary - standard variations
+job-19,TICKER-19,"Lorem ipsum dolor sit amet, consectetur adipiscing",2025/09/01 10:00,EUR 0.00,50,"Lorem ipsum dolor sit amet, consectetur adipiscing",http://lorem.com/ipsum,TRUE,employer-01,company-01
+job-20,TICKER-20,"Lorem ipsum dolor sit amet, consectetur adipiscing",2025/09/01 10:00,EUR 0.01,50,"Lorem ipsum dolor sit amet, consectetur adipiscing",http://lorem.com/ipsum,TRUE,employer-01,company-01
+job-21,TICKER-21,"Lorem ipsum dolor sit amet, consectetur adipiscing",2025/09/01 10:00,EUR 999999.99,50,"Lorem ipsum dolor sit amet, consectetur adipiscing",http://lorem.com/ipsum,TRUE,employer-01,company-01
+job-22,TICKER-22,"Lorem ipsum dolor sit amet, consectetur adipiscing",2025/09/01 10:00,EUR 1000000.00,50,"Lorem ipsum dolor sit amet, consectetur adipiscing",http://lorem.com/ipsum,TRUE,employer-01,company-01
+# salary - no singular values
+# score - standard variations
+job-23,TICKER-23,"Lorem ipsum dolor sit amet, consectetur adipiscing",2025/09/01 10:00,EUR 500000.00,0,"Lorem ipsum dolor sit amet, consectetur adipiscing",http://lorem.com/ipsum,TRUE,employer-01,company-01
+job-24,TICKER-24,"Lorem ipsum dolor sit amet, consectetur adipiscing",2025/09/01 10:00,EUR 500000.00,0.01,"Lorem ipsum dolor sit amet, consectetur adipiscing",http://lorem.com/ipsum,TRUE,employer-01,company-01
+job-25,TICKER-25,"Lorem ipsum dolor sit amet, consectetur adipiscing",2025/09/01 10:00,EUR 500000.00,99.99,"Lorem ipsum dolor sit amet, consectetur adipiscing",http://lorem.com/ipsum,TRUE,employer-01,company-01
+job-26,TICKER-26,"Lorem ipsum dolor sit amet, consectetur adipiscing",2025/09/01 10:00,EUR 500000.00,100,"Lorem ipsum dolor sit amet, consectetur adipiscing",http://lorem.com/ipsum,TRUE,employer-01,company-01
+# score - no singular values
+# description - standard variations
+job-27,TICKER-27,"Lorem ipsum dolor sit amet, consectetur adipiscing",2025/09/01 10:00,EUR 500000.00,50,L,http://lorem.com/ipsum,TRUE,employer-01,company-01
+job-28,TICKER-28,"Lorem ipsum dolor sit amet, consectetur adipiscing",2025/09/01 10:00,EUR 500000.00,50,Lo,http://lorem.com/ipsum,TRUE,employer-01,company-01
+job-29,TICKER-29,"Lorem ipsum dolor sit amet, consectetur adipiscing",2025/09/01 10:00,EUR 500000.00,50,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor*",http://lorem.com/ipsum,TRUE,employer-01,company-01
+job-30,TICKER-30,"Lorem ipsum dolor sit amet, consectetur adipiscing",2025/09/01 10:00,EUR 500000.00,50,"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor i",http://lorem.com/ipsum,TRUE,employer-01,company-01
+job-31,TICKER-31,"Lorem ipsum dolor sit amet, consectetur adipiscing",2025/09/01 10:00,EUR 500000.00,50,โลเร็ม อิปซัม,http://lorem.com/ipsum,TRUE,employer-01,company-01
+job-32,TICKER-32,"Lorem ipsum dolor sit amet, consectetur adipiscing",2025/09/01 10:00,EUR 500000.00,50,لوريم إيبسوم,http://lorem.com/ipsum,TRUE,employer-01,company-01
+job-33,TICKER-33,"Lorem ipsum dolor sit amet, consectetur adipiscing",2025/09/01 10:00,EUR 500000.00,50,洛伦·伊普森,http://lorem.com/ipsum,TRUE,employer-01,company-01
+job-34,TICKER-34,"Lorem ipsum dolor sit amet, consectetur adipiscing",2025/09/01 10:00,EUR 500000.00,50,<marquee>Hacked</marquee>,http://lorem.com/ipsum,TRUE,employer-01,company-01
+job-35,TICKER-35,"Lorem ipsum dolor sit amet, consectetur adipiscing",2025/09/01 10:00,EUR 500000.00,50,<script>alert(‘Hacked!’);</script>,http://lorem.com/ipsum,TRUE,employer-01,company-01
+job-36,TICKER-36,"Lorem ipsum dolor sit amet, consectetur adipiscing",2025/09/01 10:00,EUR 500000.00,50,' or 'A' = 'A,http://lorem.com/ipsum,TRUE,employer-01,company-01
+# description - no singular values
+# more-info - standard variations
+job-37,TICKER-37,"Lorem ipsum dolor sit amet, consectetur adipiscing",2025/09/01 10:00,EUR 500000.00,50,"Lorem ipsum dolor sit amet, consectetur adipiscing",,TRUE,employer-01,company-01
+job-38,TICKER-38,"Lorem ipsum dolor sit amet, consectetur adipiscing",2025/09/01 10:00,EUR 500000.00,50,"Lorem ipsum dolor sit amet, consectetur adipiscing",http://lorem.com/ipsum,TRUE,employer-01,company-01
+job-39,TICKER-39,"Lorem ipsum dolor sit amet, consectetur adipiscing",2025/09/01 10:00,EUR 500000.00,50,"Lorem ipsum dolor sit amet, consectetur adipiscing",https://a.org,TRUE,employer-01,company-01
+job-40,TICKER-40,"Lorem ipsum dolor sit amet, consectetur adipiscing",2025/09/01 10:00,EUR 500000.00,50,"Lorem ipsum dolor sit amet, consectetur adipiscing",http://a.b,TRUE,employer-01,company-01
+job-41,TICKER-41,"Lorem ipsum dolor sit amet, consectetur adipiscing",2025/09/01 10:00,EUR 500000.00,50,"Lorem ipsum dolor sit amet, consectetur adipiscing","http://www.lorem-ipsum.org/dolor/sit/amet,/consectetur/adipiscing/elit,/sed/do/eiusmod/tempor/incididunt/ut/labore/et/dolore/magna/aliqua/Ut/enim/ad/minim/veniam/quis/nostrud/exercitation/ullamco/laboris/nisi/ut/aliquip/ex/ea/commodo/consequat/duis/aute/",TRUE,employer-01,company-01
+job-42,TICKER-42,"Lorem ipsum dolor sit amet, consectetur adipiscing",2025/09/01 10:00,EUR 500000.00,50,"Lorem ipsum dolor sit amet, consectetur adipiscing","http://www.lorem-ipsum.org/dolor/sit/amet,/consectetur/adipiscing/elit,/sed/do/eiusmod/tempor/incididunt/ut/labore/et/dolore/magna/aliqua/Ut/enim/ad/minim/veniam/quis/nostrud/exercitation/ullamco/laboris/nisi/ut/aliquip/ex/ea/commodo/consequat/duis/aute/X",TRUE,employer-01,company-01
+job-43,TICKER-43,"Lorem ipsum dolor sit amet, consectetur adipiscing",2025/09/01 10:00,EUR 500000.00,50,"Lorem ipsum dolor sit amet, consectetur adipiscing",https://www.lorem-ipsum.org,TRUE,employer-01,company-01
+job-44,TICKER-44,"Lorem ipsum dolor sit amet, consectetur adipiscing",2025/09/01 10:00,EUR 500000.00,50,"Lorem ipsum dolor sit amet, consectetur adipiscing",https://www.lorem-ipsum.org,TRUE,employer-01,company-01
+job-45,TICKER-45,"Lorem ipsum dolor sit amet, consectetur adipiscing",2025/09/01 10:00,EUR 500000.00,50,"Lorem ipsum dolor sit amet, consectetur adipiscing",http://www.lorem-ipsum.org/dolor/sit.html,TRUE,employer-01,company-01
+job-46,TICKER-46,"Lorem ipsum dolor sit amet, consectetur adipiscing",2025/09/01 10:00,EUR 500000.00,50,"Lorem ipsum dolor sit amet, consectetur adipiscing",http://www.lorem-ipsum.org/dolor/sit.html#dolor,TRUE,employer-01,company-01
+job-47,TICKER-47,"Lorem ipsum dolor sit amet, consectetur adipiscing",2025/09/01 10:00,EUR 500000.00,50,"Lorem ipsum dolor sit amet, consectetur adipiscing",http://example.org?a=1&b=2,TRUE,employer-01,company-01
+job-48,TICKER-48,"Lorem ipsum dolor sit amet, consectetur adipiscing",2025/09/01 10:00,EUR 500000.00,50,"Lorem ipsum dolor sit amet, consectetur adipiscing",http://example.org?,TRUE,employer-01,company-01
+job-49,TICKER-49,"Lorem ipsum dolor sit amet, consectetur adipiscing",2025/09/01 10:00,EUR 500000.00,50,"Lorem ipsum dolor sit amet, consectetur adipiscing",http://example.org?a,TRUE,employer-01,company-01
+job-50,TICKER-50,"Lorem ipsum dolor sit amet, consectetur adipiscing",2025/09/01 10:00,EUR 500000.00,50,"Lorem ipsum dolor sit amet, consectetur adipiscing",http://example.org?a&b,TRUE,employer-01,company-01
+job-51,TICKER-51,"Lorem ipsum dolor sit amet, consectetur adipiscing",2025/09/01 10:00,EUR 500000.00,50,"Lorem ipsum dolor sit amet, consectetur adipiscing",http://example.org/,TRUE,employer-01,company-01
+job-52,TICKER-52,"Lorem ipsum dolor sit amet, consectetur adipiscing",2025/09/01 10:00,EUR 500000.00,50,"Lorem ipsum dolor sit amet, consectetur adipiscing",http://example.org/a,TRUE,employer-01,company-01
+job-53,TICKER-53,"Lorem ipsum dolor sit amet, consectetur adipiscing",2025/09/01 10:00,EUR 500000.00,50,"Lorem ipsum dolor sit amet, consectetur adipiscing",http://example.org/a/b,TRUE,employer-01,company-01
+job-54,TICKER-54,"Lorem ipsum dolor sit amet, consectetur adipiscing",2025/09/01 10:00,EUR 500000.00,50,"Lorem ipsum dolor sit amet, consectetur adipiscing",http://example.org/a/b?,TRUE,employer-01,company-01
+job-55,TICKER-55,"Lorem ipsum dolor sit amet, consectetur adipiscing",2025/09/01 10:00,EUR 500000.00,50,"Lorem ipsum dolor sit amet, consectetur adipiscing",http://example.org/a/b?a&b,TRUE,employer-01,company-01
+# more-info - no singular values
+# draft-mode - standard variations
+job-56,TICKER-56,"Lorem ipsum dolor sit amet, consectetur adipiscing",2025/09/01 10:00,EUR 500000.00,50,"Lorem ipsum dolor sit amet, consectetur adipiscing",http://lorem.com/ipsum,FALSE,employer-01,company-01
+# draft-mode - no singular values
+#  employer - standard variations
+job-57,TICKER-57,"Lorem ipsum dolor sit amet, consectetur adipiscing",2025/09/01 10:00,EUR 500000.00,50,"Lorem ipsum dolor sit amet, consectetur adipiscing",http://lorem.com/ipsum,TRUE,employer-02,company-01
+# employer - no singular values
+# company - standard variations
+job-58,TICKER-58,"Lorem ipsum dolor sit amet, consectetur adipiscing",2025/09/01 10:00,EUR 500000.00,50,"Lorem ipsum dolor sit amet, consectetur adipiscing",http://lorem.com/ipsum,TRUE,employer-01,company-02
+# company - no singular values
