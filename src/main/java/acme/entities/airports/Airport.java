@@ -34,7 +34,7 @@ public class Airport extends AbstractEntity {
 
 	@Mandatory
 	@NotBlank
-	@Length(max = 75)
+	@Length(max = 50)
 	@Automapped
 	private String				name;
 
