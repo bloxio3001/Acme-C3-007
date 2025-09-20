@@ -48,6 +48,18 @@ public class Airport extends AbstractEntity {
 	@Automapped
 	private OperationalScope	scope;
 
+	@Mandatory
+	@NotBlank
+	@Length(max = 50)
+	@Automapped
+	private String				country;
+
+	@Mandatory
+	@NotBlank
+	@Length(max = 50)
+	@Automapped
+	private String				city;
+
 	@Optional
 	@Valid
 	@Automapped
