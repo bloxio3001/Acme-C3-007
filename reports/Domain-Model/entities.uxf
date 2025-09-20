@@ -12,11 +12,11 @@
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
 Airport
 --
-name: String {Mandaroty, Length(max=50), NotBlank, Automapped}
+name: String {Mandatory, Length(max=50), NotBlank, Automapped}
 code: String {Mandatory, Unique, ValidIata, Automapped}
 scope: OperationalScope {Mandatory, Valid, Automapped}
-city: String {Mandaroty, Length(max=50), NotBlank, Automapped}
-country: String {Mandaroty, Length(max=50), NotBlank, Automapped}
+city: String {Mandatory, Length(max=50), NotBlank, Automapped}
+country: String {Mandatory, Length(max=50), NotBlank, Automapped}
 contactDetails: ContactDetails {Optional, Valid, Automapped}
 bg=green</panel_attributes>
     <additional_attributes/>
