@@ -27,7 +27,7 @@ public class AirportValidator extends AbstractValidator<ValidAirport, Airport> {
 
 		super.state(context, uniqueIata, "code", "acme.validation.iata.duplicated.message");
 
-		return super.hasErrors(context);
+		return !super.hasErrors(context);
 	}
 
 }
