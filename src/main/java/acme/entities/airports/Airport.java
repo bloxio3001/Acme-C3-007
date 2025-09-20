@@ -1,6 +1,7 @@
 
 package acme.entities.airports;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.validation.Valid;
 import javax.validation.constraints.NotBlank;
@@ -40,6 +41,7 @@ public class Airport extends AbstractEntity {
 
 	@Mandatory
 	@ValidIata
+	@Column(unique = true)
 	@Automapped
 	private String				code;
 

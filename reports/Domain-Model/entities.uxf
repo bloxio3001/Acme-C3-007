@@ -13,7 +13,7 @@
 Airport
 --
 name: String {Mandatory, Length(max=50), NotBlank, Automapped}
-code: String {Mandatory, Unique, ValidIata, Automapped}
+code: String {Mandatory, Column(unique=true), ValidIata, Automapped}
 scope: OperationalScope {Mandatory, Valid, Automapped}
 city: String {Mandatory, Length(max=50), NotBlank, Automapped}
 country: String {Mandatory, Length(max=50), NotBlank, Automapped}
