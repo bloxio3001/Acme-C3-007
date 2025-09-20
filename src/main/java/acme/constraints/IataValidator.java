@@ -16,7 +16,7 @@ public class IataValidator extends AbstractValidator<ValidIata, String> {
 		boolean correctMatch = value.matches("[A-Z]{3}");
 		super.state(context, correctMatch, "value", "acme.validation.iata.wrong-format.message");
 
-		return super.hasErrors(context);
+		return !super.hasErrors(context);
 	}
 
 }
