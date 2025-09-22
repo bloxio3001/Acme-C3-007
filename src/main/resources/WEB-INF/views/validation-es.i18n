@@ -10,7 +10,10 @@
 
 acme.validation.header.message  	= Debe tener entre 1 y 75 caracteres
 acme.validation.text.message   		= Debe tener entre 1 y 255 caracteres 
-acme.validation.phone.message       = Debe ser +código-país (código-área) número, donde sólo el número es obligatorio
+acme.validation.phone.message       = Debe cumplir "^\\+?\\d{6,15}$"
+
+acme.validation.iata.message	= Debe cumplir "^[A-Z]{3}$"
+acme.validation.iata.duplicated.message	= Código IATA ya usado
 
 acme.validation.job.duplicated-ticker.message  = Referencia ya usada
 acme.validation.job.ticker.message			   = La referencia sólo puede contener letras, dígitos, subrayados y guiones

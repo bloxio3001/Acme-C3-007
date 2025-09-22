@@ -10,7 +10,10 @@
 
 acme.validation.header.message  	= Must have from 1 to 75 characters
 acme.validation.text.message   		= Must have from 1 to 255 characters
-acme.validation.phone.message       = Must match +country-code (area-code) phone-number, where only the phone-number is mandatory 
+acme.validation.phone.message       = Must match "^\\+?\\d{6,15}$" 
+
+acme.validation.iata.message	= Must match "^[A-Z]{3}$"
+acme.validation.iata.duplicated.message	= Duplicated IATA code
 
 acme.validation.job.duplicated-ticker.message = The ticker is duplicated
 acme.validation.job.ticker.message			  = The ticker must have letters, digits, underscores, and hyphens only
