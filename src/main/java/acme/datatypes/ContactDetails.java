@@ -2,12 +2,12 @@
 package acme.datatypes;
 
 import javax.persistence.Embeddable;
-import javax.validation.Valid;
 
 import acme.client.components.basis.AbstractDatatype;
 import acme.client.components.mappings.Automapped;
 import acme.client.components.validation.Optional;
 import acme.client.components.validation.ValidEmail;
+import acme.client.components.validation.ValidString;
 import acme.client.components.validation.ValidUrl;
 import lombok.Getter;
 import lombok.Setter;
@@ -35,8 +35,8 @@ public class ContactDetails extends AbstractDatatype {
 	private String				email;
 
 	@Optional
-	@Valid
+	@ValidString(pattern = "^\\+?\\d{6,15}$", message = "{acme.validation.phone.message}")
 	@Automapped
-	private Phone				phone;
+	private String				phone;
 
 }

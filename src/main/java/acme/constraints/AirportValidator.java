@@ -22,10 +22,15 @@ public class AirportValidator extends AbstractValidator<ValidAirport, Airport> {
 
 		assert context != null;
 
-		Airport existingAirportWithIata = this.repository.findAirportByIata(value.getCode());
-		boolean uniqueIata = existingAirportWithIata == null || existingAirportWithIata.equals(value);
+		if (value == null)
+			super.state(context, false, "*", "javax.validation.constraints.NotNull.message");
 
-		super.state(context, uniqueIata, "code", "acme.validation.iata.duplicated.message");
+		else {
+			Airport existingAirport = this.repository.findAirportByIata(value.getCode());
+			boolean uniqueIata = existingAirport == null || existingAirport.getCode() == null || existingAirport.equals(value);
+
+			super.state(context, uniqueIata, "code", "acme.validation.iata.duplicated.message");
+		}
 
 		return !super.hasErrors(context);
 	}

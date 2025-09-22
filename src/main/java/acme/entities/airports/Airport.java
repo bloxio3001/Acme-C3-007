@@ -4,27 +4,20 @@ package acme.entities.airports;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.validation.Valid;
-import javax.validation.constraints.NotBlank;
-
-import org.hibernate.validator.constraints.Length;
 
 import acme.client.components.basis.AbstractEntity;
 import acme.client.components.mappings.Automapped;
 import acme.client.components.validation.Mandatory;
 import acme.client.components.validation.Optional;
+import acme.client.components.validation.ValidString;
 import acme.constraints.ValidAirport;
-import acme.constraints.ValidIata;
 import acme.datatypes.ContactDetails;
-import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
-import lombok.ToString;
 
 @Entity
 @Getter
 @Setter
-@EqualsAndHashCode(callSuper = false)
-@ToString
 @ValidAirport
 public class Airport extends AbstractEntity {
 
@@ -34,13 +27,12 @@ public class Airport extends AbstractEntity {
 	private static final long	serialVersionUID	= 1L;
 
 	@Mandatory
-	@NotBlank
-	@Length(max = 50)
+	@ValidString(min = 1, max = 50)
 	@Automapped
 	private String				name;
 
 	@Mandatory
-	@ValidIata
+	@ValidString(pattern = "^[A-Z]{3}$", message = "{acme.validation.iata.message}")
 	@Column(unique = true)
 	@Automapped
 	private String				code;
@@ -51,14 +43,12 @@ public class Airport extends AbstractEntity {
 	private OperationalScope	scope;
 
 	@Mandatory
-	@NotBlank
-	@Length(max = 50)
+	@ValidString(min = 1, max = 50)
 	@Automapped
 	private String				country;
 
 	@Mandatory
-	@NotBlank
-	@Length(max = 50)
+	@ValidString(min = 1, max = 50)
 	@Automapped
 	private String				city;
 
