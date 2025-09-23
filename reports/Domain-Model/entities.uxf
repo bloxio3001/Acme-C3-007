@@ -5,19 +5,42 @@
     <id>UMLClass</id>
     <coordinates>
       <x>20</x>
+      <y>220</y>
+      <w>600</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Airline
+--
+name: String {Mandatory, ValidString(min=1, max=50), Automapped}
+code: String {Mandatory, Column(unique=true), ValidString(pattern="^[A-Z]{3}$"), Automapped}
+website: String {Mandatory, ValidUrl, Automapped}
+email: String {Optional, ValidEmail, Automapped}
+phone: String {Optional, ValidString(pattern="^\\+?\\d{6,15}$"), Automapped}
+type: AirlineType {Mandatory, Valid, Automapped}
+foundationMoment: Date {Mandatory, ValidMoment(past=true), Temporal(TIMESTAMP)}
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>20</x>
       <y>20</y>
-      <w>440</w>
-      <h>150</h>
+      <w>600</w>
+      <h>180</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
 Airport
 --
-name: String {Mandatory, Length(max=50), NotBlank, Automapped}
-code: String {Mandatory, Column(unique=true), ValidIata, Automapped}
+name: String {Mandatory, ValidString(min=1, max=50), Automapped}
+code: String {Mandatory, Column(unique=true), ValidString(pattern="^[A-Z]{3}$"), Automapped}
 scope: OperationalScope {Mandatory, Valid, Automapped}
-city: String {Mandatory, Length(max=50), NotBlank, Automapped}
-country: String {Mandatory, Length(max=50), NotBlank, Automapped}
-contactDetails: ContactDetails {Optional, Valid, Automapped}
+city: String {Mandatory, ValidString(min=1, max=50), Automapped}
+country: String {Mandatory, ValidString(min=1, max=50), Automapped}
+website: String {Optional, ValidUrl, Automapped}
+email: String {Optional, ValidEmail, Automapped}
+phone: String {Optional, ValidString(pattern="^\\+?\\d{6,15}$"), Automapped}
 bg=green</panel_attributes>
     <additional_attributes/>
   </element>

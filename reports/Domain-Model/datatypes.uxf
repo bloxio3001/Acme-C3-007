@@ -4,17 +4,17 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>200</x>
+      <x>190</x>
       <y>20</y>
-      <w>440</w>
+      <w>150</w>
       <h>100</h>
     </coordinates>
-    <panel_attributes>&lt;&lt;Datatype&gt;&gt;
-ContactDetails
+    <panel_attributes>&lt;&lt;Enum&gt;&gt;
+AirlineType
 --
-website: String {Optional, ValidUrl, Automapped}
-email: String {Optional, ValidEmail, Automapped}
-phone: Phone {Optional, ValidPhone, Automapped}
+LUXURY
+STANDARD
+LOWCOST
 bg=light_gray</panel_attributes>
     <additional_attributes/>
   </element>
