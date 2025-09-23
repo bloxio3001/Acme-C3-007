@@ -5,7 +5,7 @@
     <id>UMLClass</id>
     <coordinates>
       <x>20</x>
-      <y>220</y>
+      <y>210</y>
       <w>600</w>
       <h>160</h>
     </coordinates>
@@ -26,7 +26,7 @@ bg=green</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>20</x>
-      <y>20</y>
+      <y>10</y>
       <w>600</w>
       <h>180</h>
     </coordinates>
@@ -43,5 +43,41 @@ email: String {Optional, ValidEmail, Automapped}
 phone: String {Optional, ValidString(pattern="^\\+?\\d{6,15}$"), Automapped}
 bg=green</panel_attributes>
     <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>20</x>
+      <y>470</y>
+      <w>660</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Aircraft
+--
+model: String {Mandatory, ValidString(min=1, max=50), Automapped}
+registrationNumber: String {Mandatory, Column(unique=true), ValidString(min=1, max=50), Automapped}
+capacity: Integer {Mandatory, ValidNumber(min=1, max=255), Automapped}
+cargoWeigth: Integer {Mandatory, ValidNumber(min=2000, max=50000), Automapped}
+status: AircraftStatus {Mandatory, Valid	, Automapped}
+details: String {Optional, ValidString(max=255), Automapped}
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>290</x>
+      <y>360</y>
+      <w>110</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>Belongs to ^
+lt=&lt;-x
+m1=1
+m2=*
+
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;110.0</additional_attributes>
   </element>
 </diagram>

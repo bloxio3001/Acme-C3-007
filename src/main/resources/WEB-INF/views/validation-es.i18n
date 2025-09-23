@@ -15,6 +15,8 @@ acme.validation.phone.message       = Debe cumplir "^\\+?\\d{6,15}$"
 acme.validation.iata.message	= Debe cumplir "^[A-Z]{3}$"
 acme.validation.iata.duplicated.message	= Código IATA ya usado
 
+acme.validation.aircraft.registration.duplicated.message = Código de registro ya en uso
+
 acme.validation.job.duplicated-ticker.message  = Referencia ya usada
 acme.validation.job.ticker.message			   = La referencia sólo puede contener letras, dígitos, subrayados y guiones
 acme.validation.job.deadline.message		   = La fecha límite no puede ser anterior a una semana

@@ -15,6 +15,8 @@ acme.validation.phone.message       = Must match "^\\+?\\d{6,15}$"
 acme.validation.iata.message	= Must match "^[A-Z]{3}$"
 acme.validation.iata.duplicated.message	= Duplicated IATA code
 
+acme.validation.aircraft.registration.duplicated.message = Duplicated registration number
+
 acme.validation.job.duplicated-ticker.message = The ticker is duplicated
 acme.validation.job.ticker.message			  = The ticker must have letters, digits, underscores, and hyphens only
 acme.validation.job.deadline.message		  = Deadline must be at least one week ahead
