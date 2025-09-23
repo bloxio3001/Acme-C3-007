@@ -9,9 +9,10 @@ import acme.client.components.basis.AbstractEntity;
 import acme.client.components.mappings.Automapped;
 import acme.client.components.validation.Mandatory;
 import acme.client.components.validation.Optional;
+import acme.client.components.validation.ValidEmail;
 import acme.client.components.validation.ValidString;
+import acme.client.components.validation.ValidUrl;
 import acme.constraints.ValidAirport;
-import acme.datatypes.ContactDetails;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -53,7 +54,17 @@ public class Airport extends AbstractEntity {
 	private String				city;
 
 	@Optional
-	@Valid
+	@ValidUrl
 	@Automapped
-	private ContactDetails		contactDetails;
+	private String				website;
+
+	@Optional
+	@ValidEmail
+	@Automapped
+	private String				email;
+
+	@Optional
+	@ValidString(pattern = "^\\+?\\d{6,15}$", message = "{acme.validation.phone.message}")
+	@Automapped
+	private String				phone;
 }
