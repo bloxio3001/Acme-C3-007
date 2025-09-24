@@ -27,9 +27,9 @@ public class AircraftValidator extends AbstractValidator<ValidAircraft, Aircraft
 
 		else {
 			Aircraft existingAircraft = this.repository.findAircraftByRegistrationNumber(value.getRegistrationNumber());
-			boolean uniqueIata = existingAircraft == null || existingAircraft.getRegistrationNumber() == null || existingAircraft.equals(value);
+			boolean uniqueRegNum = existingAircraft == null || existingAircraft.getRegistrationNumber() == null || existingAircraft.equals(value);
 
-			super.state(context, uniqueIata, "code", "acme.validation.iata.duplicated.message");
+			super.state(context, uniqueRegNum, "code", "acme.validation.aircraft.registration.duplicated.message");
 		}
 
 		return !super.hasErrors(context);
