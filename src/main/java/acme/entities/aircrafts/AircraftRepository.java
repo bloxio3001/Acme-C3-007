@@ -1,5 +1,5 @@
 
-package acme.entities.aircraft;
+package acme.entities.aircrafts;
 
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;

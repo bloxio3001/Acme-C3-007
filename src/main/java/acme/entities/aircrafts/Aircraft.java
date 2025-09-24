@@ -1,5 +1,5 @@
 
-package acme.entities.aircraft;
+package acme.entities.aircrafts;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
