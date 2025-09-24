@@ -17,6 +17,11 @@ acme.validation.iata.duplicated.message	= Duplicated IATA code
 
 acme.validation.aircraft.registration.duplicated.message = Duplicated registration number
 
+acme.validation.service.promo.pattern.message = Must match "^[A-Z]{4}-[0-9]{2}$"
+acme.validation.service.promo.year.message = Last two digits must correspond to current year
+acme.validation.service.promo.duplicated.message = Duplicated promotion code
+acme.validation.service.discount.mandatory.message = If a promotion code is provided, a discount amount must be specified
+
 acme.validation.job.duplicated-ticker.message = The ticker is duplicated
 acme.validation.job.ticker.message			  = The ticker must have letters, digits, underscores, and hyphens only
 acme.validation.job.deadline.message		  = Deadline must be at least one week ahead
