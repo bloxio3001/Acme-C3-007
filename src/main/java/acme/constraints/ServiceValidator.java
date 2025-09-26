@@ -35,8 +35,11 @@ public class ServiceValidator extends AbstractValidator<ValidService, Service> {
 			super.state(context, correctPromoCode, "promotionCode", "acme.validation.service.promo.year.message");
 
 			// Unique promotionCode
-			Service existingService = this.repository.findServiceByPromotionCode(value.getPromotionCode());
-			boolean uniquePromoCode = existingService == null || existingService.getPromotionCode() == null || existingService.equals(value);
+			boolean uniquePromoCode = true;
+			if (value.getPromotionCode() != null) {
+				Service existingService = this.repository.findServiceByPromotionCode(value.getPromotionCode());
+				uniquePromoCode = existingService == null || existingService.getPromotionCode() == null || existingService.equals(value);
+			}
 
 			super.state(context, uniquePromoCode, "promotionCode", "acme.validation.service.promo.duplicated.message");
 
