@@ -7,8 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import acme.client.components.validation.AbstractValidator;
 import acme.client.components.validation.Validator;
-import acme.entities.aircraft.Aircraft;
-import acme.entities.aircraft.AircraftRepository;
+import acme.entities.aircrafts.Aircraft;
+import acme.entities.aircrafts.AircraftRepository;
 
 @Validator
 public class AircraftValidator extends AbstractValidator<ValidAircraft, Aircraft> {
@@ -27,9 +27,9 @@ public class AircraftValidator extends AbstractValidator<ValidAircraft, Aircraft
 
 		else {
 			Aircraft existingAircraft = this.repository.findAircraftByRegistrationNumber(value.getRegistrationNumber());
-			boolean uniqueIata = existingAircraft == null || existingAircraft.getRegistrationNumber() == null || existingAircraft.equals(value);
+			boolean uniqueRegNum = existingAircraft == null || existingAircraft.getRegistrationNumber() == null || existingAircraft.equals(value);
 
-			super.state(context, uniqueIata, "code", "acme.validation.iata.duplicated.message");
+			super.state(context, uniqueRegNum, "registrationNumber", "acme.validation.aircraft.registration.duplicated.message");
 		}
 
 		return !super.hasErrors(context);

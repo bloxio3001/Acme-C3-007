@@ -17,6 +17,11 @@ acme.validation.iata.duplicated.message	= Código IATA ya usado
 
 acme.validation.aircraft.registration.duplicated.message = Código de registro ya en uso
 
+acme.validation.service.promo.pattern.message = Debe cumplir "^[A-Z]{4}-[0-9]{2}$"
+acme.validation.service.promo.year.message = Los últimos dos dígitos deben corresponder con el año actual
+acme.validation.service.promo.duplicated.message = Código de promoción ya en uso
+acme.validation.service.discount.mandatory.message = Si se provee un código de promoción, se debe especificar una cantidad a descontar
+
 acme.validation.job.duplicated-ticker.message  = Referencia ya usada
 acme.validation.job.ticker.message			   = La referencia sólo puede contener letras, dígitos, subrayados y guiones
 acme.validation.job.deadline.message		   = La fecha límite no puede ser anterior a una semana
