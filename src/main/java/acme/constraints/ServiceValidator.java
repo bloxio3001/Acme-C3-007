@@ -30,7 +30,7 @@ public class ServiceValidator extends AbstractValidator<ValidService, Service> {
 		else {
 			// Last two digits of promotionCode corresponds to current year
 			String yearDigits = String.valueOf(LocalDate.now().getYear()).substring(2);
-			boolean correctPromoCode = value.getPromotionCode().endsWith(yearDigits);
+			boolean correctPromoCode = value.getPromotionCode() != null && value.getPromotionCode().endsWith(yearDigits);
 
 			super.state(context, correctPromoCode, "promotionCode", "acme.validation.service.promo.year.message");
 
