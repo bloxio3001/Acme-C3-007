@@ -52,7 +52,7 @@ public class Review extends AbstractEntity {
 	@Mandatory
 	@Valid
 	@Embedded
-	private Reviewable			reviweable;
+	private Reviewable			reviewable;
 
 	@Optional
 	@ValidNumber(min = 0, max = 10)
