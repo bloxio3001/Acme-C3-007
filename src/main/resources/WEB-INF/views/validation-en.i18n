@@ -22,6 +22,9 @@ acme.validation.service.promo.year.message = Last two digits must correspond to 
 acme.validation.service.promo.duplicated.message = Duplicated promotion code
 acme.validation.service.discount.mandatory.message = If a promotion code is provided, a discount amount must be specified
 
+acme.validation.review.reviewable.one.message = Reviews must point to one and only one reviewable type object
+acme.validation.review.reviewable.match.message = The reviewableType field must match the store reviewable object
+
 acme.validation.job.duplicated-ticker.message = The ticker is duplicated
 acme.validation.job.ticker.message			  = The ticker must have letters, digits, underscores, and hyphens only
 acme.validation.job.deadline.message		  = Deadline must be at least one week ahead

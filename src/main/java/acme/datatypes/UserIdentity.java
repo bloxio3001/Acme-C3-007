@@ -13,11 +13,11 @@
 package acme.datatypes;
 
 import javax.persistence.Embeddable;
-import javax.validation.Valid;
 
 import acme.client.components.mappings.Automapped;
 import acme.client.components.principals.DefaultUserIdentity;
 import acme.client.components.validation.Optional;
+import acme.constraints.ValidPhone;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -35,9 +35,9 @@ public class UserIdentity extends DefaultUserIdentity {
 	// Attributes -------------------------------------------------------------
 
 	@Optional
-	@Valid
+	@ValidPhone
 	@Automapped
-	private Phone				phone;
+	private String				phone;
 
 	// Derived attributes -----------------------------------------------------
 

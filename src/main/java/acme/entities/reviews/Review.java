@@ -13,7 +13,8 @@ import acme.client.components.validation.Mandatory;
 import acme.client.components.validation.Optional;
 import acme.client.components.validation.ValidMoment;
 import acme.client.components.validation.ValidNumber;
-import acme.client.components.validation.ValidString;
+import acme.constraints.ValidLongText;
+import acme.constraints.ValidShortText;
 import acme.datatypes.Reviewable;
 import lombok.Getter;
 import lombok.Setter;
@@ -29,7 +30,7 @@ public class Review extends AbstractEntity {
 	private static final long	serialVersionUID	= 1L;
 
 	@Mandatory
-	@ValidString(min = 1, max = 50)
+	@ValidShortText
 	@Automapped
 	private String				author;
 
@@ -39,12 +40,12 @@ public class Review extends AbstractEntity {
 	private Date				postMoment;
 
 	@Mandatory
-	@ValidString(min = 1, max = 50)
+	@ValidShortText
 	@Automapped
 	private String				subject;
 
 	@Mandatory
-	@ValidString(min = 1, max = 255)
+	@ValidLongText
 	@Automapped
 	private String				body;
 

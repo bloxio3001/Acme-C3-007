@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<diagram program="umlet" version="15.0.0">
+<diagram program="umlet" version="15.1">
   <zoom_level>10</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>120</x>
-      <y>260</y>
+      <x>210</x>
+      <y>280</y>
       <w>190</w>
       <h>90</h>
     </coordinates>
@@ -13,15 +13,15 @@
 ValidShortText
 --
 + NotBlank
-+ Length(min=1, max=75)
++ Length(min=1, max=50)
 bg=RED</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>390</x>
-      <y>260</y>
+      <x>480</x>
+      <y>280</y>
       <w>190</w>
       <h>90</h>
     </coordinates>
@@ -36,58 +36,39 @@ bg=RED</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>120</x>
-      <y>380</y>
-      <w>240</w>
+      <x>210</x>
+      <y>400</y>
+      <w>190</w>
       <h>90</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Constraint&gt;&gt;
-ValidTicker
+ValidIata
 --
 + NotBlank
-+ Pattern(regexp="^[\\w\\-]{5,15}$")
++ Pattern("^[A-Z]{3}$")
 bg=RED</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>390</x>
-      <y>380</y>
-      <w>370</w>
-      <h>100</h>
+      <x>210</x>
+      <y>520</y>
+      <w>190</w>
+      <h>70</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Constraint&gt;&gt;
-ValidPhone
+ValidAirport
 --
-+ countryCode must be in range 1..999
-+ areaCode must be in range 1..99999
-+ number must match pattern "\\d{1,9}([\\s-]\\d{1,9}){0,5}"
-bg=RED</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>120</x>
-      <y>500</y>
-      <w>350</w>
-      <h>100</h>
-    </coordinates>
-    <panel_attributes>&lt;&lt;Constraint&gt;&gt;
-ValidJob
---
-+ workLoad must equal 100.00 if draftModel == false.
-+ deadline must be at least 5 days in future when 
-  a Job is published.
++ IATA code must be unique
 bg=RED</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>120</x>
-      <y>70</y>
+      <x>210</x>
+      <y>90</y>
       <w>570</w>
       <h>160</h>
     </coordinates>
@@ -101,6 +82,104 @@ this software. It has been tested carefully, but it is not guaranteed for any pa
 purposes. The copyright owner does not offer any warranties or representations, nor do
 they accept any liabilities with respect to them.
 bg=#f3fdff</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>480</x>
+      <y>400</y>
+      <w>240</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Constraint&gt;&gt;
+ValidPhone
+--
++  Pattern(regexp="^\\+?\\d{6,15}$")
+bg=RED</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>750</x>
+      <y>400</y>
+      <w>260</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Constraint&gt;&gt;
+ValidPromoCode
+--
++  Pattern(regexp="^[A-Z]{4}-[0-9]{2}$")
+bg=RED</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>420</x>
+      <y>520</y>
+      <w>190</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Constraint&gt;&gt;
+ValidAirline
+--
++ IATA code must be unique
+bg=RED</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>630</x>
+      <y>520</y>
+      <w>300</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Constraint&gt;&gt;
+ValidService
+--
++ Promo code, if given, must be unique
++ The last two digits of the promo code must
+match current year
++ If a promo code is given, a discount must
+be as well
+bg=RED</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>210</x>
+      <y>620</y>
+      <w>250</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Constraint&gt;&gt;
+ValidAircraft
+--
++ Registration number must be unique
+bg=RED</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>210</x>
+      <y>720</y>
+      <w>250</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Constraint&gt;&gt;
+ValidReviewable
+--
++ reviewableType must match the 
+one stored
++ It must have one and only one of
+the reviewables 
+(Airport, Airline, Service, Flight)
+bg=RED</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>

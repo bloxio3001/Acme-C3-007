@@ -10,6 +10,7 @@ import acme.client.components.basis.AbstractDatatype;
 import acme.client.components.mappings.Automapped;
 import acme.client.components.validation.Mandatory;
 import acme.client.components.validation.Optional;
+import acme.constraints.ValidReviewable;
 import acme.entities.airlines.Airline;
 import acme.entities.airports.Airport;
 import acme.entities.reviews.ReviewableType;
@@ -20,6 +21,7 @@ import lombok.Setter;
 @Embeddable
 @Getter
 @Setter
+@ValidReviewable
 public class Reviewable extends AbstractDatatype {
 
 	/**

@@ -25,13 +25,13 @@ import javax.validation.constraints.Pattern;
 @Retention(RetentionPolicy.RUNTIME)
 @Constraint(validatedBy = {})
 
-@Pattern(regexp = "^\\+?\\d{6,15}$")
+@Pattern(regexp = "^[A-Z]{4}-[0-9]{2}$")
 
-public @interface ValidPhone {
+public @interface ValidPromoCode {
 
 	// Standard validation properties -----------------------------------------
 
-	String message() default "{acme.validation.phone.message}";
+	String message() default "{acme.validation.service.promo.pattern.message}";
 
 	Class<?>[] groups() default {};
 	Class<? extends Payload>[] payload() default {};

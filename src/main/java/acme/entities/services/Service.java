@@ -11,9 +11,10 @@ import acme.client.components.mappings.Automapped;
 import acme.client.components.validation.Mandatory;
 import acme.client.components.validation.Optional;
 import acme.client.components.validation.ValidNumber;
-import acme.client.components.validation.ValidString;
 import acme.client.components.validation.ValidUrl;
+import acme.constraints.ValidPromoCode;
 import acme.constraints.ValidService;
+import acme.constraints.ValidShortText;
 import acme.entities.airports.Airport;
 import lombok.Getter;
 import lombok.Setter;
@@ -30,7 +31,7 @@ public class Service extends AbstractEntity {
 	private static final long	serialVersionUID	= 1L;
 
 	@Mandatory
-	@ValidString(min = 1, max = 50)
+	@ValidShortText
 	@Automapped
 	private String				name;
 
@@ -45,7 +46,7 @@ public class Service extends AbstractEntity {
 	private Double				dwell;
 
 	@Optional
-	@ValidString(pattern = "^[A-Z]{4}-[0-9]{2}$", message = "{acme.validation.service.promo.pattern.message}")
+	@ValidPromoCode
 	@Column(unique = true)
 	@Automapped
 	private String				promotionCode;
@@ -55,8 +56,8 @@ public class Service extends AbstractEntity {
 	@Automapped
 	private Double				discount;
 
-	@ManyToOne(optional = false)
+	@Mandatory
 	@Valid
-	@Automapped
+	@ManyToOne(optional = false)
 	private Airport				airport;
 }
