@@ -24,11 +24,6 @@ class FormatterRegistrar implements WebMvcConfigurer {
 	@Override
 	public void addFormatters(final FormatterRegistry registry) {
 		assert registry != null;
-
-		PhoneFormatter phoneFormatter;
-
-		phoneFormatter = new PhoneFormatter();
-		registry.addFormatter(phoneFormatter);
 	}
 
 }

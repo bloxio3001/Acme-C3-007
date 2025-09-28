@@ -22,6 +22,9 @@ acme.validation.service.promo.year.message = Los últimos dos dígitos deben cor
 acme.validation.service.promo.duplicated.message = Código de promoción ya en uso
 acme.validation.service.discount.mandatory.message = Si se provee un código de promoción, se debe especificar una cantidad a descontar
 
+acme.validation.review.reviewable.one.message = Las reseñas deben apuntar a uno y solo un objeto a reseñar
+acme.validation.review.reviewable.match.message = El campo reviewableType debe coincidir con el tipo del objeto a reseñar
+
 acme.validation.job.duplicated-ticker.message  = Referencia ya usada
 acme.validation.job.ticker.message			   = La referencia sólo puede contener letras, dígitos, subrayados y guiones
 acme.validation.job.deadline.message		   = La fecha límite no puede ser anterior a una semana
