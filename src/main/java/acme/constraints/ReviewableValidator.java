@@ -49,7 +49,7 @@ public class ReviewableValidator extends AbstractValidator<ValidReviewable, Revi
 				break;
 			case SERVICE:
 				matchesReviewableType = value.getService() != null;
-				property = "sercice";
+				property = "service";
 				break;
 			default:
 				break;
