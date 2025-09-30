@@ -9,6 +9,6 @@ import acme.client.repositories.AbstractRepository;
 @Repository
 public interface AirlineManagerRepository extends AbstractRepository {
 
-	@Query("SELECT am FROM AirlineManger am WHERE am.identifierNumber = :idNum")
+	@Query("SELECT am FROM AirlineManager am WHERE am.identifierNumber = :idNum")
 	public AirlineManager findManagerByIdentifierNumber(String idNum);
 }
