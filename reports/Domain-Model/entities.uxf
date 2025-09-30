@@ -176,7 +176,7 @@ m2=*
     <panel_attributes>&lt;&lt;Entity&gt;&gt;
 AirlineManager {ValidAirlineManager}
 --
-identifierNumber: String {Mandatory, Column(unique=true), ValidMangerIdentifier, Automapped}
+identifierNumber: String {Mandatory, Column(unique=true), ValidManagerIdentifier, Automapped}
 experience: Integer {Mandatoryn ValidNumber, Automapped}
 birthday: Date {Mandatory, ValidMoment(past=true), Temporal(TIMESTAMP)}
 picture: String {Optional, ValidUrl, Automapped}
