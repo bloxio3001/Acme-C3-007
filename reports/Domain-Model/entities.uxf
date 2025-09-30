@@ -177,7 +177,7 @@ m2=*
 AirlineManager {ValidAirlineManager}
 --
 identifierNumber: String {Mandatory, Column(unique=true), ValidManagerIdentifier, Automapped}
-experience: Integer {Mandatoryn ValidNumber, Automapped}
+experience: Integer {Mandatory, ValidNumber, Automapped}
 birthday: Date {Mandatory, ValidMoment(past=true), Temporal(TIMESTAMP)}
 picture: String {Optional, ValidUrl, Automapped}
 bg=green</panel_attributes>
