@@ -25,6 +25,9 @@ acme.validation.service.discount.mandatory.message = Si se provee un código de 
 acme.validation.review.reviewable.one.message = Las reseñas deben apuntar a uno y solo un objeto a reseñar
 acme.validation.review.reviewable.match.message = El campo reviewableType debe coincidir con el tipo del objeto a reseñar
 
+acme.validation.airlinemanager.idnum.duplicated.message = Número de identificación ya en uso
+acme.validation.airlinemanager.idnum.pattern.message = Debe cumplir "^[A-Z]{2-3}\d{6}$" 
+
 acme.validation.job.duplicated-ticker.message  = Referencia ya usada
 acme.validation.job.ticker.message			   = La referencia sólo puede contener letras, dígitos, subrayados y guiones
 acme.validation.job.deadline.message		   = La fecha límite no puede ser anterior a una semana

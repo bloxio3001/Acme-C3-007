@@ -165,4 +165,22 @@ m2=*
 </panel_attributes>
     <additional_attributes>140.0;20.0;10.0;20.0</additional_attributes>
   </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>704</x>
+      <y>448</y>
+      <w>496</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+AirlineManager {ValidAirlineManager}
+--
+identifierNumber: String {Mandatory, Column(unique=true), ValidManagerIdentifier, Automapped}
+experience: Integer {Mandatory, ValidNumber, Automapped}
+birthday: Date {Mandatory, ValidMoment(past=true), Temporal(TIMESTAMP)}
+picture: String {Optional, ValidUrl, Automapped}
+bg=green</panel_attributes>
+    <additional_attributes/>
+  </element>
 </diagram>
