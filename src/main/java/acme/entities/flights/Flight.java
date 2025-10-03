@@ -50,32 +50,33 @@ public class Flight extends AbstractEntity {
 
 	@Mandatory
 	@Valid
-	@Transient
-	private Date				departure;
-
-	@Mandatory
-	@Valid
-	@Transient
-	private Date				arrival;
-
-	@Mandatory
-	@Valid
-	@Transient
-	private String				origin;
-
-	@Mandatory
-	@Valid
-	@Transient
-	private String				destination;
-
-	@Mandatory
-	@Valid
-	@Transient
-	private Integer				layovers;
-
-	@Mandatory
-	@Valid
 	@ManyToOne(optional = false)
 	private AirlineManager		manager;
+
+
+	@Transient
+	private Date getDeparture() {
+		return null; //TBI
+	}
+
+	@Transient
+	private Date getArrival() {
+		return null; //TBI
+	}
+
+	@Transient
+	private String getOrigin() {
+		return null; //TBI
+	}
+
+	@Transient
+	private String getDestination() {
+		return null; //TBI
+	}
+
+	@Transient
+	private Integer getLayovers() {
+		return null; //TBI
+	}
 
 }
