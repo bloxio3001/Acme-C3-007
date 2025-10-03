@@ -11,6 +11,7 @@ import javax.validation.Valid;
 import acme.client.components.basis.AbstractEntity;
 import acme.client.components.mappings.Automapped;
 import acme.client.components.validation.Mandatory;
+import acme.client.components.validation.Optional;
 import acme.client.components.validation.ValidNumber;
 import acme.constraints.ValidLongText;
 import acme.constraints.ValidShortText;
@@ -43,7 +44,7 @@ public class Flight extends AbstractEntity {
 	@Automapped
 	private Double				cost;
 
-	@Mandatory
+	@Optional
 	@ValidLongText
 	@Automapped
 	private String				description;
