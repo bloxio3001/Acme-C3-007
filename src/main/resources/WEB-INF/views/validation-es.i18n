@@ -26,7 +26,11 @@ acme.validation.review.reviewable.one.message = Las reseñas deben apuntar a uno
 acme.validation.review.reviewable.match.message = El campo reviewableType debe coincidir con el tipo del objeto a reseñar
 
 acme.validation.airlinemanager.idnum.duplicated.message = Número de identificación ya en uso
-acme.validation.airlinemanager.idnum.pattern.message = Debe cumplir "^[A-Z]{2-3}\d{6}$" 
+acme.validation.airlinemanager.idnum.pattern.message = Debe cumplir "^[A-Z]{2-3}\d{6}$"
+
+acme.validation.leg.flightnumber.pattern.message	= Debe cumplir "^[A-Z]{3}[0-9]{4}$"
+acme.validation.leg.flightnumber.duplicated.message	= Número de vuelo ya en uso
+acme.validation.leg.temporal.message	= El aterrizaje no puede ocurrir antes que el despegue
 
 acme.validation.job.duplicated-ticker.message  = Referencia ya usada
 acme.validation.job.ticker.message			   = La referencia sólo puede contener letras, dígitos, subrayados y guiones

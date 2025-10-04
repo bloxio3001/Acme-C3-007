@@ -26,7 +26,12 @@ acme.validation.review.reviewable.one.message = Reviews must point to one and on
 acme.validation.review.reviewable.match.message = The reviewableType field must match the store reviewable object
 
 acme.validation.airlinemanager.idnum.duplicated.message = Duplicated identifier number
-acme.validation.airlinemanager.idnum.pattern.message = Must match  "^[A-Z]{2-3}\d{6}$"  
+acme.validation.airlinemanager.idnum.pattern.message = Must match  "^[A-Z]{2-3}\d{6}$"
+
+acme.validation.leg.flightnumber.pattern.message	= Must match "^[A-Z]{3}[0-9]{4}$"
+acme.validation.leg.flightnumber.duplicated.message	= Duplicated flight number
+acme.validation.leg.temporal.message	= Landings cannot happen before takeoffs
+
 
 acme.validation.job.duplicated-ticker.message = The ticker is duplicated
 acme.validation.job.ticker.message			  = The ticker must have letters, digits, underscores, and hyphens only
