@@ -71,6 +71,9 @@ public class Leg extends AbstractEntity {
 
 	@Transient
 	public Integer getHours() {
+		if (this.departure == null || this.arrival == null) {
+			return null;
+		}
 		return (int) Duration.between(this.departure.toInstant(), this.arrival.toInstant()).toHours();
 	}
 
