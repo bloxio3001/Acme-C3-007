@@ -2,15 +2,16 @@
 package acme.entities.services;
 
 import javax.persistence.Column;
+import javax.persistence.Embedded;
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
 import javax.validation.Valid;
 
 import acme.client.components.basis.AbstractEntity;
+import acme.client.components.datatypes.Money;
 import acme.client.components.mappings.Automapped;
 import acme.client.components.validation.Mandatory;
 import acme.client.components.validation.Optional;
-import acme.client.components.validation.ValidNumber;
 import acme.client.components.validation.ValidUrl;
 import acme.constraints.ValidPromoCode;
 import acme.constraints.ValidService;
@@ -41,9 +42,9 @@ public class Service extends AbstractEntity {
 	private String				picture;
 
 	@Mandatory
-	@ValidNumber(fraction = 2)
-	@Automapped
-	private Double				dwell;
+	@Valid
+	@Embedded
+	private Money				dwell;
 
 	@Optional
 	@ValidPromoCode
@@ -52,9 +53,9 @@ public class Service extends AbstractEntity {
 	private String				promotionCode;
 
 	@Optional
-	@ValidNumber(fraction = 2)
-	@Automapped
-	private Double				discount;
+	@Valid
+	@Embedded
+	private Money				discount;
 
 	@Mandatory
 	@Valid

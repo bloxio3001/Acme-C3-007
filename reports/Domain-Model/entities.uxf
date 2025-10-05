@@ -93,9 +93,9 @@ Service {ValidService}
 --
 + name: String {Mandatory, ValidShortText, Automapped}
 + picture: String {Mandatory, ValidUrl, Automapped}
-+ dwell: Double {Mandatory, ValidNumber(fraction=2), Automapped}
++ dwell: Money {Mandatory, Valid, Automapped}
 + promotionCode: String {Optional, Column(unique=true), ValidPromoCode, Automapped}
-+ discount: Double {Optional, ValidNumber(fraction=2), Automapped}
++ discount: Money {Optional, Valid, Automapped}
 bg=green</panel_attributes>
     <additional_attributes/>
   </element>
@@ -196,7 +196,7 @@ Flight
 --
 + tag: String {Mandatory, ValidShortText, Automapped}
 + selfTransfer: Boolean {Mandatory, Valid, Automapped}
-+ cost: Double {Mandatory, ValidNumber(fraction=2), Automapped}
++ cost: Money {Mandatory, Valid, Automapped}
 + description: String {Optional, ValidLongText, Automapped}
 /+ departure: Date {Mandatory, Valid, Transient}
 /+ arrival: Date {Mandatory, Valid, Transient}
