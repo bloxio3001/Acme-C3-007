@@ -1,0 +1,6 @@
+key,code,email,foundation_moment,name,phone,type,website
+airline-01,IBE,ibe@airlines.com,2020/01/08 00:00,Iberia,+345678911,STANDARD,https://www.ibe.airlines.com
+airline-02,RYR,ryr@airlines.com,2021/01/08 00:00,Ryanair,+345678912,LOWCOST,https://www.ryr.airlines.com
+airline-03,LUX,lux@airlines.com,2022/01/08 00:00,Air Luxe,+345678913,LUXURY,https://www.lux.airlines.com
+airline-04,SWI,swi@airlines.com,2023/01/08 00:00,Standard Wings,+345678914,STANDARD,https://www.swi.airlines.com
+airline-05,BFY,bfy@airlines.com,2024/01/08 00:00,Budget Flyer,+345678915,LOWCOST,https://www.bfy.airlines.com

@@ -1,0 +1,5 @@
+key,key:manager,cost,description,self_transfer,tag
+flight-01,manager-01,EUR 89.90,London-Barcelona Express,true,cheapest
+flight-02,manager-02,EUR 103.50,Sevilla-New York,false,fastest
+flight-03,manager-01,EUR 120.50,London-Sevilla,false,first class
+flight-04,manager-02,EUR 90.85,SVQ-BCN,true,early departure

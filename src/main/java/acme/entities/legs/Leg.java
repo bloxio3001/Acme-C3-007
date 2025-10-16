@@ -19,6 +19,7 @@ import acme.constraints.ValidFlightNumber;
 import acme.constraints.ValidLeg;
 import acme.entities.aircrafts.Aircraft;
 import acme.entities.airports.Airport;
+import acme.entities.flights.Flight;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -68,12 +69,16 @@ public class Leg extends AbstractEntity {
 	@ManyToOne(optional = false)
 	private Aircraft			aircraft;
 
+	@Mandatory
+	@Valid
+	@ManyToOne(optional = false)
+	private Flight				flight;
+
 
 	@Transient
 	public Integer getHours() {
-		if (this.departure == null || this.arrival == null) {
+		if (this.departure == null || this.arrival == null)
 			return null;
-		}
 		return (int) Duration.between(this.departure.toInstant(), this.arrival.toInstant()).toHours();
 	}
 

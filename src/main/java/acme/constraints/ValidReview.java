@@ -11,8 +11,8 @@ import javax.validation.Payload;
 
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
-@Constraint(validatedBy = ReviewableValidator.class)
-public @interface ValidReviewable {
+@Constraint(validatedBy = ReviewValidator.class)
+public @interface ValidReview {
 	// Standard validation properties -----------------------------------------
 
 	String message() default "";

@@ -1,0 +1,6 @@
+key,key:airline,key:airport,key:flight,key:service,reviewable_type,author,body,post_moment,recommended,score,subject
+review-01,airline-02,null,null,null,AIRLINE,John Doe,Very comfortable flight and great staff. Highly recommend.,2020/02/10 01:00,true,10,Excellent Service
+review-02,null,airport-01,null,null,AIRPORT,Jane Smith,Long security lines but the process was fast. Good dining options.,2019/02/11 03:15,true,7,Crowded but Efficient
+review-03,null,null,null,service-03,SERVICE,Alex Brown,Magnificient service from the crew.,2016/03/24 04:50,true,9,Worth the Cost
+review-04,null,null,flight-01,null,FLIGHT,Sara Lee,Departure was on time and the in-flight service was great.,2020/02/11 02:00,true,8,Smooth Journey
+review-05,null,null,flight-04,null,FLIGHT,Anonymous,Flight was cancelled without notice. Poor communication from the staff.,2024/12/01 02:30,false,2,Terrible Delay

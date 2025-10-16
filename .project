@@ -39,10 +39,5 @@
 			<type>2</type>
 			<locationURI>WORKSPACE_LOC/Frameworks/Acme-Framework-25.7.0/target/classes</locationURI>
 		</link>
-		<link>
-			<name>target/classes</name>
-			<type>2</type>
-			<location>//D:/Courses/DT/24-25/Workspace-25/Starters/Acme-Jobs-25.7.0/target/classes/</location>
-		</link>
 	</linkedResources>
 </projectDescription>
