@@ -1,0 +1,5 @@
+key,city,code,country,email,name,phone,scope,website
+airport-01,Seville,SVQ,Spain,svq@airports.com,Seville Airport,+345678901,REGIONAL,https://www.svq.airports.com
+airport-02,Barcelona,BCN,Spain,bcn@airports.com,Barcelona Airport,+345678902,INTERNATIONAL,https://www.bcn.airports.com
+airport-03,London,LHR,United Kingdom,lhr@airports.com,London Heathrow Airport,+345678903,INTERNATIONAL,https://www.lhr.airports.com
+airport-04,New York,LGA,United States,lga@airports.com,New York La Guardia Airport,+345678904,DOMESTIC,https://www.lga.airports.com

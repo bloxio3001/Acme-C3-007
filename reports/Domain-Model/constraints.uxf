@@ -149,10 +149,10 @@ bg=RED</panel_attributes>
       <x>100</x>
       <y>510</y>
       <w>250</w>
-      <h>110</h>
+      <h>130</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Constraint&gt;&gt;
-ValidReviewable
+ValidReview
 --
 + reviewableType must match the 
 one stored

@@ -1,0 +1,7 @@
+key,key:flight,key:aircraft,key:destination,key:origin,flight_number,departure,arrival,status
+leg-01,flight-01,aircraft-01,airport-03,airport-01,ACT1634,2026/01/01 01:00,2026/01/01 05:00,ON_TIME
+leg-02,flight-02,aircraft-03,airport-01,airport-03,LUA1356,2025/12/25 09:00,2025/12/25 12:00,DELAYED
+leg-03,flight-03,aircraft-01,airport-03,airport-01,PTR9672,2026/02/15 09:00,2026/02/15 15:00,CANCELLED
+leg-04,flight-04,aircraft-03,airport-02,airport-01,QPW4814,2025/06/12 12:00,2025/06/12 16:00,LANDED
+leg-05,flight-01,aircraft-02,airport-01,airport-02,NCE9271,2026/01/01 08:00, 2026/01/01 13:00,ON_TIME
+leg-06,flight-02,aircraft-03,airport-03,airport-04,ASD1283,2025/12/25 19:00,2025/12/26 02:00,ON_TIME

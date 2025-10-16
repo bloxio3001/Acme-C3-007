@@ -72,25 +72,6 @@ bg=light_gray</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>20</x>
-      <y>200</y>
-      <w>440</w>
-      <h>130</h>
-    </coordinates>
-    <panel_attributes>&lt;&lt;Datatype&gt;&gt;
-Reviewable {ValidReviewable}
---
-reviewableType: ReviewableType {Mandatory, Valid, Automapped}
-airport: Airport {Optional, ValidAirport, Automapped}
-airline: Airline {Optional, ValidAirline, Autommaped}
-service: Service {Optional, ValidService, Autommaped}
-flight: Flight {Optional, ValidFlight, Autommaped}
-bg=light_gray</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
       <x>760</x>
       <y>20</y>
       <w>180</w>

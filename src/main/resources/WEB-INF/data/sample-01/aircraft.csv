@@ -1,0 +1,5 @@
+key,key:airline,capacity,cargo_weight,details,model,registration_number,status
+aircraft-01,airline-01,180,15000,New generation seating,Airbus A320,A320LUX01,ACTIVE_SERVICE
+aircraft-02,airline-01,160,12000,Standard configuration,Boeing 737-800,B738SWI02,ACTIVE_SERVICE
+aircraft-03,airline-02,100,8000,Needs engine check,Embraer E190,E190BFY03,ACTIVE_SERVICE
+aircraft-04,airline-03,250,45000,Long haul fleet,Boeing 777,B777LUX04,ACTIVE_SERVICE

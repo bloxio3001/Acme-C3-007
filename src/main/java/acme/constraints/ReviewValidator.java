@@ -8,13 +8,13 @@ import javax.validation.ConstraintValidatorContext;
 
 import acme.client.components.validation.AbstractValidator;
 import acme.client.components.validation.Validator;
-import acme.datatypes.Reviewable;
+import acme.entities.reviews.Review;
 
 @Validator
-public class ReviewableValidator extends AbstractValidator<ValidReviewable, Reviewable> {
+public class ReviewValidator extends AbstractValidator<ValidReview, Review> {
 
 	@Override
-	public boolean isValid(final Reviewable value, final ConstraintValidatorContext context) {
+	public boolean isValid(final Review value, final ConstraintValidatorContext context) {
 
 		assert context != null;
 

@@ -1,0 +1,5 @@
+key,key:airport,discount,dwell,name,picture,promotion_code
+service-01,airport-01,EUR 5.00,EUR 50.00,Priority Boarding,https://example.com/pb.jpg,FAST-25
+service-02,airport-02,EUR 3.50,EUR 65.90,Extra Baggage,https://example.com/eb.jpg,EXTR-25
+service-03,airport-03,EUR 0.50,EUR 2.00,Lounge Access,https://example.com/la.jpg,LUXE-25
+service-04,airport-02,EUR 0.85,EUR 5.50,In-flight Wi-Fi,https://example.com/wf.jpg,WIFI-25

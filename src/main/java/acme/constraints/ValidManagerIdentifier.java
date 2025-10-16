@@ -16,7 +16,7 @@ import javax.validation.constraints.Pattern;
 @Constraint(validatedBy = {})
 
 @NotBlank
-@Pattern(regexp = "^[A-Z]{2-3}\\d{6}$")
+@Pattern(regexp = "^[A-Z]{2,3}\\d{6}$")
 
 public @interface ValidManagerIdentifier {
 
