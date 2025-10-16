@@ -10,7 +10,7 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.validation.Valid;
 
-import acme.client.components.basis.AbstractEntity;
+import acme.client.components.basis.AbstractRole;
 import acme.client.components.mappings.Automapped;
 import acme.client.components.validation.Mandatory;
 import acme.client.components.validation.Optional;
@@ -27,7 +27,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @ValidAirlineManager
-public class AirlineManager extends AbstractEntity {
+public class AirlineManager extends AbstractRole {
 
 	/**
 	 * 

@@ -2,3 +2,6 @@ key,enabled,identity,password,username
 user-account-administrator-01,true,"UserIdentity{name: 'Administrator', surname: 'Acme', email: 'administrator@acme.com'}",administrator,administrator
 user-account-administrator-02,true,"UserIdentity{name: 'Administrator1', surname: 'Acme', email: 'administrator1@acme.com'}",administrator1,administrator1
 user-account-administrator-03,true,"UserIdentity{name: 'Administrator2', surname: 'Acme', email: 'administrator2@acme.com'}",administrator2,administrator2
+user-account-manager-01,true,"UserIdentity{name: 'Manager1', surname: 'Acme', email: 'manager1@acme.com'}",manager1,manager1
+user-account-manager-02,true,"UserIdentity{name: 'Manager3', surname: 'Acme', email: 'manager2@acme.com'}",manager2,manager2
+user-account-manager-03,true,"UserIdentity{name: 'Manager3', surname: 'Acme', email: 'manager3@acme.com'}",manager3,manager3
